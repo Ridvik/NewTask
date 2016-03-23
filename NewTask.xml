@@ -30,7 +30,7 @@
                       </block>
                     </value>
                     <statement name="DO">
-                      <block type="movement_reverse" id="305"></block>
+                      <block type="movement_forward" id="425"></block>
                     </statement>
                     <next>
                       <block type="movement_stop" id="387">
