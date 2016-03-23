@@ -6,7 +6,7 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_reverse" id="270"></block>
+      <block type="movement_forward" id="339"></block>
     </statement>
     <next>
       <block type="movement_stop" id="70">
@@ -21,7 +21,39 @@
               <block type="movement_left" id="195"></block>
             </statement>
             <next>
-              <block type="movement_stop" id="260"></block>
+              <block type="movement_stop" id="260">
+                <next>
+                  <block type="controls_repeat" id="363" inline="true">
+                    <value name="TIMES">
+                      <block type="math_number" id="370">
+                        <field name="NUM">125000</field>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="movement_reverse" id="305"></block>
+                    </statement>
+                    <next>
+                      <block type="movement_stop" id="387">
+                        <next>
+                          <block type="controls_repeat" id="377" inline="true">
+                            <value name="TIMES">
+                              <block type="math_number" id="394">
+                                <field name="NUM">32500</field>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="movement_right" id="415"></block>
+                            </statement>
+                            <next>
+                              <block type="movement_stop" id="404"></block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
             </next>
           </block>
         </next>
